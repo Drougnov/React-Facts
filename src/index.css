@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Poppins:wght@600&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    font-family: 'Inter', sans-serif;
+}
+.container nav{
+    height: 5.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: inset 0px 1px 4px rgba(0, 0, 0, 0.5);
+    padding: 2rem;
+    transition: all .3s ease-out;
+}
+.container nav.dark{
+    background: #21222A;
+}
+nav .logo{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+.logo__img{
+    width: 2rem;
+    height: 2rem;
+}
+.logo__text{
+    color: #00ABCA;
+    font-size: 1.5rem;
+}
+nav .toggle{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+.toggle span{
+    font-size: .8rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+.toggle__mode-light{
+    color: #2B283A;
+}
+nav.dark .toggle__mode-light{
+    color: #918E9B;
+}
+.toggle__mode-dark{
+    color: #D5D4D8;
+}
+nav.dark .toggle__mode-dark{
+    color: #FFFFFF;
+}
+.toggle__switch{
+    width: 3rem;
+    height: 1.5rem;
+    display: inline-block;
+    position: relative;
+}
+.toggle #switch{
+    display: none;
+}
+.toggle__slider{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: #222222;
+    border-radius: 1rem;
+    cursor: pointer;
+    transition: all .3s ease-out;
+}
+nav.dark .toggle__slider{
+    background: #FFFFFF;
+}
+.toggle__slider::before,
+nav.dark .toggle__slider::before{
+    position: absolute;
+    content: '';
+    width: 1.2rem;
+    height: 1.2rem;
+    border-radius: 50%;
+    background: #FFFFFF;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    margin: .15rem;
+}
+nav.dark .toggle__slider::before{
+    background: #222222;
+    right: 0;
+    margin-left: auto;
+}
+.container main{
+    width: 100%;
+    height: calc(100vh - 5.5rem);
+    color: #2B283A;
+    background: #FFFFFF;
+    padding: 2rem;
+    transition: all .3s ease-out;
+    position: relative;
+}
+main::before{
+    position: absolute;
+    content: '';
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: url(./images/logo-big.png);
+    background-repeat: no-repeat;
+    background-position: center right;
+}
+main.dark{
+    color: #FFFFFF;
+    background: #2B283A;
+}
+main h1{
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+}
+main .fact-list{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    list-style-type: none;
+    padding-left: 1.5rem;
+}
+.fact-list li{
+    position: relative;
+}
+.fact-list li::before{
+    position: absolute;
+
+}
