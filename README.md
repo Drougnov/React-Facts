@@ -20,7 +20,7 @@ This is a simple static page with dark/light theme made with React. This is a so
 
 ## Live Site URL
 
-<>(haven't uploaded yet)
+<https://Drougnov.github.io/React-Facts>
 
 ## Built with
 
