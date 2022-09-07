@@ -8,11 +8,15 @@ Hello! Thanks for cheking out this repository.
 
 ## What is it about
 
--
+This is a simple static page with dark/light theme made with React. This is a solo practice project of [freeCodeCamp ft Scrimba's React tutorial course](https://youtu.be/bMknfKXIFA8).
 
 ## This project teaches(especially) you
 
--
+-How to divide site into little components
+
+-How to use useState to control the state
+
+-How to style unordered list's marker
 
 ## Live Site URL
 
